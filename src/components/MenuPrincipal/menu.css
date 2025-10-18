@@ -1,0 +1,46 @@
+.menu-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Cinza);
+    box-shadow: 0 0 10px var(--Cinza-escuro);
+    padding: 50px 0;
+}
+.logo{
+    width: 600px;
+    max-width: 95vw;
+}
+
+/* Estilização da barra de pesquisa */
+
+.caixa-de-pesquisa{
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: solid 1px var(--Verde-principal);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.182);
+    max-width: 99vw;
+    justify-content: space-between;
+}
+.caixa-de-pesquisa>input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 80%;
+}
+.caixa-de-pesquisa>button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.caixa-de-pesquisa>input::-webkit-input-placeholder{
+    color: var(--Verde-principal);
+    opacity: 70%;
+}
+.lupa{
+    color: var(--Verde-principal);
+    font-size: 2rem;
+}

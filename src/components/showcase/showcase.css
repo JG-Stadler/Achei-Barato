@@ -1,0 +1,74 @@
+/* Container principal */
+
+.vitrine{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* Card de produtos */
+
+.card-produto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--Cinza);
+    border: solid 1px var(--Verde-principal);
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    padding: 10px 5px 20px 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.316);
+    transition: background .5s;
+}
+.foto-produto{
+    width: 75%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.nome-produto{
+     font-size: 20px;
+     color: var(--Laranja);
+}
+.valor-produto{
+    font-size: 2.5rem;
+    color: var(--Verde-principal);
+    position: relative;
+}
+.valor-produto::before{
+    content: 'A partir de:';
+    color: var(--Verde-principal);
+    font-size: small;
+    position: absolute;
+    top: -20px;
+    text-wrap: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Card ativo ao passar o mouse */
+
+.card-produto:hover{
+    background-color: var(--Verde-principal);
+    box-shadow: 0 0 10px var(--Laranja);
+    transform: scale(1.05);
+}
+.card-produto:hover .nome-produto{
+    color: var(--Cinza);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+}
+.card-produto:hover .valor-produto{
+    color: var(--Cinza);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+}
+.card-produto:hover .valor-produto::after{
+    color: var(--Cinza);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+}
+.linkProduto{
+    text-decoration: none
+}
