@@ -19,7 +19,7 @@
     border-radius: 30px;
     border: solid 1px var(--Verde-principal);
     margin-top: 60px;
-    display: flex;
+    display: none;
     align-items: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.182);
     max-width: 99vw;
